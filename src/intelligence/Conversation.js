@@ -1,19 +1,16 @@
 const APIS = {
     rasa: {
-        url: "https://btn6xd.inf.uni-bayreuth.de/collabo-writing-rasa",
-        parser_url: "https://btn6xd.inf.uni-bayreuth.de/collabo-writing-rasa/model/parse"
+        url: "YOUR_URL_TO_RASA",
+        parser_url: "YOUR_URL_TO_RASA/model/parse"
     },
     t5: {
-        url: "https://btn6xd.inf.uni-bayreuth.de/t5/api/v1/predict"
-    },
-    bert2bert: {
-        url: "https://btn6xd.inf.uni-bayreuth.de/bert2bert/api/v1/predict"
+        url: "YOUR_URL_TO_T5"
     },
     gptneo: {
-        url: "https://btn6xd.inf.uni-bayreuth.de/gptneo/api/v1/predict"
+        url: "YOUR_URL_TO_GPTNEO"
     },
     opus_mt: {
-        url: "https://btn6xd.inf.uni-bayreuth.de/opus/api/v1/predict"
+        url: "YOUR_URL_TO_OPUSMT"
     }
 };
 

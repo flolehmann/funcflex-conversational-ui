@@ -1,6 +1,49 @@
-# Getting Started with Create React App
+# Conversational UI Prototype, as part of the paper "Functional Flexibility in Generative AI Interfaces"
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This prototype allows task delegations to an AI on text documents via interactive comments.
+
+See the paper on arxiv: https://arxiv.org/abs/2410.10644
+
+## Run the prototype locally
+
+This prototype has been build in 2021 and thus runs on Node version 10.24.1 and npm 6.14.12. Please note,
+that we did not update the dependencies, and it might be unsafe to run this project online.
+
+If you plan to run the prototype locally follow these steps: 
+
+1. Install node version `dubnium`, e.g. use nvm: `nvm install 10.24.1`
+2. Activate the node version: `nvm use 10.24.1`
+3. Install dependencies `npm install`
+4. Run the project: `npm run start`
+
+The prototype will be available in your browser, e.g. at `http://localhost:3000/`
+
+To enable task delegations:
+
+1. Run the intent recognition via our RASA backend: https://github.com/flolehmann/funcflex-rasa-intent-recognition
+2. Start the model APIs: 
+   - OPUS-MT: https://github.com/flolehmann/funcflex-modelapi-opusmt
+   - T5: https://github.com/flolehmann/funcflex-modelapi-t5
+   - GPT-neo: https://github.com/flolehmann/funcflex-modelapi-gptneo
+
+Finally, put the URLs to the RASA backend and model APIs into the [Conversation.js](src%2Fintelligence%2FConversation.js)
+
+You are all set! Have fun using the prototype!
+
+## Deploy the prototype for experimental purpose
+
+You can use docker-compose to deploy the prototype for experimental purpose. 
+Use the existing [docker-compose.prod.yml](docker-compose.prod.yml) as a basis for doing so. 
+
+Just execute `docker-compose -f docker-compose.prod.yml up -d` to run a dockerized version of the project.
+
+
+
+
+
+# We initiated this project with create React app:
+
+#Getting Started with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
